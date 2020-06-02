@@ -503,7 +503,7 @@
 }
 
 .bs-popover-auto[x-placement^="bottom"],
-.bs-popover-bottom {
+.bs-popover-top {
   left: calc(100% - 22.1rem) !important;
   margin-top: 15px;
 }
