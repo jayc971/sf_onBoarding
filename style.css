@@ -134,10 +134,8 @@ select.form-control {
   }
 }
 
-@media only screen and (min-width: 991px) {
-  #color-palette-plus {
-    display: flex;
-  }
+#color-palette-plus {
+  display: flex !important;
 }
 
 /***/
