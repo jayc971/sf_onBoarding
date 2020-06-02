@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
+
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+* {
+  font-family: "Muli", "Rubik", "Helvetica", "Arial", "sans-serif";
+}
+
+body {
+  background-color: rgb(230, 234, 239) !important;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.border-md {
+  border-width: 2px;
+}
+
+.btn-facebook {
+  background: #405d9d;
+  border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+  background: #314879;
+}
+
+.btn-twitter {
+  background: #42aeec;
+  border: none;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+  background: #1799e4;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+  min-height: 100vh;
+}
+
+.form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form__step-header {
+  font-size: 27px;
+  line-height: 0px;
+  font-weight: 700;
+  color: #676767;
+  text-align: left;
+  margin: 50px auto 50px;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 0rem !important;
+}
+
+.pt-5,
+.py-5 {
+  padding-top: 1rem !important;
+}
+
+.form__step {
+  display: block;
+  font-size: 15px;
+  line-height: 0px;
+  font-weight: 700;
+  color: #676767;
+  text-align: left;
+  margin: 10px 0px 22px 30px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  margin: 10px 20px 10px 29px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#color-palette {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Portrait and Landscape */
+@media (max-device-width: 480px) {
+  #servicechat {
+    display: none;
+  }
+}
