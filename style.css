@@ -120,11 +120,8 @@ select.form-control {
   margin-top: 1rem;
 }
 
-.input-group {
-  width: unset !important;
-}
-
 /* Portrait and Landscape */
+
 @media only screen and (max-width: 991px) {
   #color-palette-plus {
     display: block;
@@ -132,10 +129,25 @@ select.form-control {
   .row {
     display: block;
   }
+
+  .input-group {
+    width: 100% !important;
+  }
 }
 
-#color-palette-plus {
-  display: flex !important;
+@media (min-width: 991px) and (max-width: 1200px) {
+  .input-group {
+    width: 300% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #color-palette-plus {
+    display: flex;
+  }
+  .input-group {
+    width: unset !important;
+  }
 }
 
 /***/
