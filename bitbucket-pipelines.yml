@@ -8,9 +8,6 @@ image: samueldebruyn/debian-git
 pipelines:
   default:
     - step:
-        name: Deploy to test
-        deployment: test
-        # trigger: manual  # Uncomment to make this a manual deployment.
         script:
           - git push https://heroku:4f109495-f0ee-4364-bb8d-9e28a1996185@git.heroku.com/sf-onboarding.git HEAD
 
