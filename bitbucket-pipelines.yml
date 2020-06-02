@@ -1,0 +1,17 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: samueldebruyn/debian-git
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to test
+        deployment: test
+        # trigger: manual  # Uncomment to make this a manual deployment.
+        script:
+          - git push https://heroku:4f109495-f0ee-4364-bb8d-9e28a1996185@git.heroku.com/sf-onboarding.git HEAD
+
+
