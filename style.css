@@ -116,9 +116,6 @@ select.form-control {
   margin-bottom: 10px;
 }
 
-/* Portrait and Landscape */
-@media (max-device-width: 480px) {
-  #servicechat {
-    display: none;
-  }
+.form-group.col-lg-12.mx-auto.mb-0 {
+  margin-top: 0.5rem;
 }
