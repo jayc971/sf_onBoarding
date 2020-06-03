@@ -7,7 +7,6 @@
 }
 
 body {
-  overflow: hidden;
   background-color: rgb(230, 234, 239) !important;
 }
 
@@ -120,22 +119,40 @@ select.form-control {
   margin-top: 1rem;
 }
 
-.input-group {
-  width: unset !important;
-}
-
 /* Portrait and Landscape */
-@media only screen and (max-width: 991px) {
+
+@media only screen and (max-width: 1200px) {
   #color-palette-plus {
     display: block;
   }
   .row {
     display: block;
   }
+
+  div#cp3-container {
+    min-width: 100% !important;
+  }
 }
 
-#color-palette-plus {
-  display: flex !important;
+@media only screen and (min-width: 1200px) {
+  #color-palette-plus {
+    display: flex;
+  }
+  .input-group {
+    width: unset !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .col-lg-6 {
+    max-width: 100% !important;
+  }
 }
 
 /***/
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .container {
+    max-width: 60%;
+  }
+}
