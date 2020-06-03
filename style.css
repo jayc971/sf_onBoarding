@@ -7,7 +7,6 @@
 }
 
 body {
-  overflow: hidden;
   background-color: rgb(230, 234, 239) !important;
 }
 
@@ -122,7 +121,7 @@ select.form-control {
 
 /* Portrait and Landscape */
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   #color-palette-plus {
     display: block;
   }
@@ -130,14 +129,8 @@ select.form-control {
     display: block;
   }
 
-  .input-group {
-    width: 100% !important;
-  }
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-  .input-group {
-    width: 300% !important;
+  div#cp3-container {
+    min-width: 100% !important;
   }
 }
 
@@ -150,4 +143,16 @@ select.form-control {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .col-lg-6 {
+    max-width: 100% !important;
+  }
+}
+
 /***/
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .container {
+    max-width: 60%;
+  }
+}
